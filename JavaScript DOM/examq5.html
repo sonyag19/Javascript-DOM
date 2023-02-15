@@ -1,0 +1,27 @@
+<!-- find the sum of a digit input by the user?
+ex: number=123
+sum=6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var num=parseInt(prompt("enter a number"))
+        var sum=0;
+        while(num>0){
+            rem=num%10
+            sum=sum+rem;
+            num=Math.floor(num/10)
+        }
+        document.write("sum= ",sum)
+
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

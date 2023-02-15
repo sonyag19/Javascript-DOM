@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        class car{
+            constructor(brand){
+                this.brand=brand
+                document.write("Brand Name=",this.brand+' ')
+            }
+        }
+        class model extends car{
+            constructor(brand,model){
+                super(brand)
+                this.model=model
+                document.write("Model name=",this.model+' ')
+                
+            }
+        }
+        var obj=new model("volvo","xc90")
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+
+<!-- create a class father with variables : name, phone number, address 
+create a child class son with variable: son_name, qualification -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        class father{
+            constructor(name,phone,address){
+                this.name=name;
+                this.phone=phone;
+                this.address=address;
+                document.write("Father name: ",this.name+"<br>")
+                document.write("Phone:",this.phone+"<br>")
+                document.write("address:",this.address+"<br>")
+            }
+        }
+        class son extends father{
+            constructor(name,phone,address,son_name,quali){
+                super(name,phone,address)
+                this.son_name=son_name;
+                this.quali=quali;
+                document.write("Son Name:",this.son_name+"<br>")
+                document.write("Qualification:",this.quali+"<br>")
+
+            }
+        }
+        var obj=new son("marvel",1234567,"xyz house","Junior Marvel","Btech")
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

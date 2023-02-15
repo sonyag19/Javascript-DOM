@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        //Function to change webpage background color
+        function changeBodyBg(color){
+            document.body.style.background=color;
+        }
+
+        //Function to change heading color
+        function changeHeadingClr(color){
+            document.getElementById("heading").style.color=color;
+        }
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">This is a heading</h1>
+    <p>This is a paragraph of text</p>
+    
+    <hr>
+    <div>
+        <label>Change Webpage Backgroud To:</label>
+        <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
+        <button type="button" onclick="changeBodyBg('lime');">Lime</button>
+        <button type="button" onclick="changeBodyBg('orange');">Orange</button>
+    </div>
+    <br>
+    <div>
+        <label>Change Heading Backgroud To:</label>
+        <button type="button" onclick="changeHeadingClr('red');">Red</button>
+        <button type="button" onclick="changeHeadingClr('green');">Green</button>
+        <button type="button" onclick="changeHeadingClr('blue');">Blue</button>
+
+    </div>
+</body>
+</html>

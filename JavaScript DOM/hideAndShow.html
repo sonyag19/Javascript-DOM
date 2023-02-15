@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function hideshow(){
+            var x=document.getElementById("a")
+            if(x.style.display=='none'){
+                x.style.display='block'
+            }
+            else{
+                x.style.display='none'
+            }
+        }
+    </script>
+    <style>
+        #b{
+            height:100px;
+            width: 200px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="b">
+        <p id="a">Click to hide and show</p>
+    </div>
+        <button onclick="hideshow()">Hide & Show</button>
+    
+
+</body>
+</html>

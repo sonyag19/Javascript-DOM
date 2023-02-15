@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+     // Static variable: A variable that declares inside a class but outside a function. 
+    <script>
+        class fun{
+            static company_name="TCS"
+            constructor(name,age){
+                this.name=name
+                this.age=age
+            }
+            getval(){
+                document.write(this.name+' '+this.age+' '+fun.company_name)
+            }
+        }
+        var obj1=new fun("amal",24)
+        obj1.getval()
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+create a class film with variables film_name, rating, director 
+static theatre,location. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        class fun{
+            static theatre="PADMA";
+            static location="Kochi";
+            constructor(film_name,rating,director){
+                this.film_name=film_name
+                this.rating=rating
+                this.director=director
+            }
+            getval(){
+                document.write(this.film_name+' '+this.rating+' '+this.director+' '+fun.theatre+' '+fun.location)
+            }
+        }
+        var obj1=new fun("Declaration",3,"Mahesh")
+        obj1.getval()
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function mOver(obj){
+            obj.innerHTML="Thank You"
+            obj.style.backgroundColor="red";
+
+        }
+        function mOut(obj){
+            obj.innerHTML="Mouse Over Me"
+            obj.style.backgroundColor="green";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    style="background-color:aquamarine; width: 120px; height: 20px; padding: 40px;">
+        Mouse Over...
+
+    </div>
+    <!-- // this keyword is an instance keyword that refers a global object. -->
+</body>
+</html>

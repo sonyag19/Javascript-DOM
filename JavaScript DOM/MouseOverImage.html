@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        if(document.images){
+            var image1=new Image();         //load first image
+            image1.src="apple.jpg";
+            var image2=new Image();         //load second image
+            image2.src="non1.jfif";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Rollover witha Mouse Events</title>
+</head>
+<body>
+    <a href="#" onmouseover="document.myImage.src=image2.src;"
+        onmouseout="document.myImage.src=image1.src;">
+        <img name="myImage" src="apple.jpg" height="200px" width="200px">
+    </a>
+</body>
+</html>
